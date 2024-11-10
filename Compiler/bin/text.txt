@@ -1,0 +1,20 @@
+var mas:array[0..5] of integer;
+  a ,c,i, kol_chet, kol_nechet:integer;
+begin
+  a:= 7;
+  for i:=0 to 5 do begin
+    mas[i] := i*a;
+  end;
+  c:=0;
+  kol_chet:=0;
+  kol_nechet:=0;
+  while c<6 do begin
+    if mas[c] mod 2 = 0 then begin
+      kol_chet:=kol_chet+1;
+    end
+    else begin
+      kol_nechet:= kol_nechet+1;
+    end;
+    c:=c+1;
+  end;
+end.
